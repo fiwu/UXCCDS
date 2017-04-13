@@ -1,19 +1,19 @@
 {
 	"_Rule":[{
-		"Name":"Prototypes",
+		"Name":"Home",
 		"View":"index.ejs",
+		"Data":"./",
+		"Controller":"Index"
+	},{
+		"Name":"Prototypes",
+		"View":"docs.ejs",
 		"Data":"./prototypes",
-		"Controller":"index"
+		"Controller":"detail"
 	},{
 		"Name":"Research",
 		"View":"docs.ejs",
 		"Data":"./research",
 		"Controller":"detail"
-	},{
-		"Name":"Index",
-		"View":"index.ejs",
-		"Data":"./",
-		"Controller":"index"
 	},{
 		"Name":"Team",
 		"View":"docs.ejs",
@@ -21,6 +21,9 @@
 		"Controller":"detail"
 	}],
 	"Nav":{
+		"Home":{
+			"Url":"./"
+		},
 		"Prototypes":{
 			"Url":"../prototypes/index.html",
 			"SubNav":{
@@ -39,7 +42,7 @@
 			"Url":"../research/360°-camera-and-vr.html"
 		},
 		"Team":{
-			"Url":""
+			"Url":"../team/index.html"
 		}
 	},
 	"_page_item_num":10,
