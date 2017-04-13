@@ -22,7 +22,7 @@
 	}],
 	"Nav":{
 		"Home":{
-			"Url":"./"
+			"Url":"./index.html"
 		},
 		"Prototypes":{
 			"Url":"../prototypes/index.html",
