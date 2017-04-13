@@ -1,0 +1,258 @@
+
+body {
+  margin: 0;
+  font-family: 'Quicksand', sans-serif;
+  background-color: #f4f4f4;
+}
+
+a {
+  color: #000;
+}
+a:hover {
+  color:#666;
+}
+h1{
+  margin-top: 0;
+}
+p img {
+  max-width: 30%; 
+  margin-right: 20px;
+}
+.container {
+  max-width: 1024px; 
+  margin:0 auto; 
+  padding: 20px; 
+  position: relative;
+}
+.main{ 
+  clear: both; 
+  margin-top: 40px; 
+}
+.sideMenu{
+  max-width: 28%; 
+  float: left; 
+  padding: 20px; 
+}
+.sideMenu a {
+  display: block;
+  padding: 10px 15px;
+  text-align: right;
+}
+.content{
+  max-width: 68%; 
+  float: left; 
+  padding: 20px 20px 20px 40px; 
+  border-left: 1px solid #ccc; 
+}
+.copyright {
+  max-width: 1024px;
+  margin: 0 auto;
+  text-align: center;
+  border-top:1px solid #F13712;
+}
+
+/* header */
+
+.header {
+  background-color: #fff;
+  box-shadow: 1px 1px 4px 0 rgba(0,0,0,.1);
+  /*position: fixed;*/
+  position: relative;
+  width: 1025px;
+  margin: 0 auto;
+  z-index: 3;
+}
+
+.header ul {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  overflow: hidden;
+  background-color: #fff;
+}
+
+.header li a {
+  display: block;
+  padding: 20px 20px;
+  border-right: 1px solid #f4f4f4;
+  text-decoration: none;
+  text-align: center;
+  color: #F13712;
+}
+
+.header li a:hover,
+.header .menu-btn:hover {
+  background-color: #f4f4f4;
+}
+
+.header .logo img {
+  display: block;
+  float: left;/*
+  font-size: 2em;
+  padding: 10px 20px;
+  text-decoration: none;*/
+  max-width: 50px;
+  padding-top:13px;
+  padding-left: 20px;
+}
+
+/* menu */
+
+.header .menu {
+  clear: both;
+  max-height: 0;
+  transition: max-height .2s ease-out;
+}
+
+/* menu icon */
+
+.header .menu-icon {
+  cursor: pointer;
+  display: inline-block;
+  float: right;
+  padding: 28px 20px;
+  position: relative;
+  user-select: none;
+}
+
+.header .menu-icon .navicon {
+  background: #333;
+  display: block;
+  height: 2px;
+  position: relative;
+  transition: background .2s ease-out;
+  width: 18px;
+}
+
+.header .menu-icon .navicon:before,
+.header .menu-icon .navicon:after {
+  background: #333;
+  content: '';
+  display: block;
+  height: 100%;
+  position: absolute;
+  transition: all .2s ease-out;
+  width: 100%;
+}
+
+.header .menu-icon .navicon:before {
+  top: 5px;
+}
+
+.header .menu-icon .navicon:after {
+  top: -5px;
+}
+
+/* menu btn */
+
+.header .menu-btn {
+  display: none;
+}
+
+.header .menu-btn:checked ~ .menu {
+  max-height: 240px;
+}
+
+.header .menu-btn:checked ~ .menu-icon .navicon {
+  background: transparent;
+}
+
+.header .menu-btn:checked ~ .menu-icon .navicon:before {
+  transform: rotate(-45deg);
+}
+
+.header .menu-btn:checked ~ .menu-icon .navicon:after {
+  transform: rotate(45deg);
+}
+
+.header .menu-btn:checked ~ .menu-icon:not(.steps) .navicon:before,
+.header .menu-btn:checked ~ .menu-icon:not(.steps) .navicon:after {
+  top: 0;
+}
+
+/* 48em = 768px */
+
+@media (min-width: 48em) {
+  .header li {
+    
+  }
+  .header li a {
+    padding: 20px 30px;
+    float: left;
+  }
+  .header .menu {
+    clear: none;
+    /*float: right;*/
+    max-height: none;
+  }
+  .header .menu-icon {
+    display: none;
+  }
+  
+}
+/* change side menu and content to 100% screen width when screen size is smaller than 768px*/
+@media only screen and (max-width: 768px) {
+  .header{
+    width: 100%;
+    position: fixed;
+  }
+  .sideMenu{
+    min-width: 100%;
+    border-bottom: 1px solid #ccc;
+    
+  }
+  .sideMenu a{
+    padding: 5px 10px;
+    text-align: left;
+  }
+  .content{
+    border: none;
+    min-width: 100%;
+  }
+}
+
+/* section */
+
+.section {
+  overflow: hidden;
+  margin: auto;
+  max-width: 100%;
+}
+
+.section a {
+  position: relative;
+  float: left;
+  width: 100%;
+}
+
+.section a img {
+  width: 100%;
+  display: block;
+}
+
+.section a span {
+  color: #fff;
+  position: absolute;
+  left: 5%;
+  bottom: 5%;
+  font-size: 2em;
+  text-shadow: 1px 1px 0 #000;
+}
+
+.section-split a span {
+  display: none;
+}
+
+.section-split a:hover span {
+  display: block;
+}
+
+
+/* 48em = 768px */
+
+@media (min-width: 48em) {
+  .section-split a {
+    width: 50%;
+  }
+}
+
