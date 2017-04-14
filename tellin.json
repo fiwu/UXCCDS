@@ -3,21 +3,22 @@
 		"Name":"Home",
 		"View":"index.ejs",
 		"Data":"./",
-		"Controller":"Index"
+		"Controller":"index"
 	},{
 		"Name":"Prototypes",
 		"View":"docs.ejs",
 		"Data":"./prototypes",
 		"Controller":"detail"
 	},{
+		"Name":"Prototypes",
+		"View":"index.ejs",
+		"Data":"./prototypes",
+		"Controller":"index"
+	},
+	{
 		"Name":"Research",
 		"View":"docs.ejs",
 		"Data":"./research",
-		"Controller":"detail"
-	},{
-		"Name":"Team",
-		"View":"docs.ejs",
-		"Data":"./team",
 		"Controller":"detail"
 	}],
 	"Nav":{
@@ -25,7 +26,7 @@
 			"Url":"./index.html"
 		},
 		"Prototypes":{
-			"Url":"../prototypes/index.html",
+			"Url":"./prototypes/index.html",
 			"SubNav":{
 				"Current":{
 					"Url":""
