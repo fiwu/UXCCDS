@@ -69,6 +69,7 @@ p img {
   list-style: none;
   overflow: hidden;
   background-color: #fff;
+  position: relative;
 }
 
 .header li a {
@@ -168,6 +169,15 @@ p img {
 .header .menu-btn:checked ~ .menu-icon:not(.steps) .navicon:before,
 .header .menu-btn:checked ~ .menu-icon:not(.steps) .navicon:after {
   top: 0;
+}
+/* submenu */
+.subMenu{
+  background: #ccc;
+  width: 100%;
+}
+.subMenu li a{
+  font-size: 14px;
+  color: #666666;  
 }
 
 /* 48em = 768px */
