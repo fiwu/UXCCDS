@@ -11,7 +11,7 @@
 		"Controller":"detail"
 	},{
 		"Name":"Prototypes",
-		"View":"index.ejs",
+		"View":"prototypes.ejs",
 		"Data":"./prototypes",
 		"Controller":"index"
 	},

@@ -107,10 +107,10 @@ p img {
 .header .menu li ul{
   display: none;
 }
-.header .menu li:hover ul, .menu li:focus ul {
+/*.header .menu li:hover ul, .menu li:focus ul {
   position: absolute;
   display: block;
-}
+}*/
 /* submenu */
 .subMenu{
   background: #ccc;
