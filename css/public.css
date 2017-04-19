@@ -33,6 +33,9 @@ p img {
   float: left; 
   padding: 20px; 
 }
+.sideMenu li {
+  list-style: none;
+}
 .sideMenu a {
   display: block;
   padding: 10px 15px;
@@ -110,6 +113,8 @@ p img {
   display: none;
   width: 100%;
   box-shadow: 1px 1px 4px 0 rgba(0,0,0,.1);
+  background-color: #efefef;
+  padding-left: 185px;
 }
 /* trying accordion from here */
 .header .menu li:hover>ul, .menu li:focus ul{
@@ -117,6 +122,13 @@ p img {
   position: absolute;
   left: 0;
   top: 50px;
+}
+.header .menu li input {
+  display: none;
+}
+.header .menu li ul li a {
+  border-right: none;
+  padding: 10px 20px;
 }
 /*
 .header ul.menu li ul li{
