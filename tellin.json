@@ -14,6 +14,11 @@
 		"View":"prototypes.ejs",
 		"Data":"./prototypes",
 		"Controller":"index"
+	},{
+		"Name":"Team",
+		"View":"team.ejs",
+		"Data":"./team",
+		"Controller":"index"
 	},
 	{
 		"Name":"Research",
@@ -38,7 +43,7 @@
 					"Url":""
 				},
 				"Guide":{
-					"Url":"guide/clear-cache.html"
+					"Url":"prototypes/guide/clear-cache.html"
 				}
 			}
 		},
@@ -46,7 +51,7 @@
 			"Url":"research/360°-camera-and-vr.html"
 		},
 		"Team":{
-			"Url":"team/index.html"
+			"Url":"team/members.html"
 		}
 	},
 	"_page_item_num":10,
